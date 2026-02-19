@@ -100,7 +100,7 @@ async function updateUserPlan(email, plan) {
   }
 }
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 DualOdds backend running on port ${PORT}`);
 });
